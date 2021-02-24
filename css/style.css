@@ -1,0 +1,114 @@
+* { box-sizing: border-box; }
+
+/* Fundo */
+body {
+  background-color: rgb(77, 75, 75);
+  background-image: url('../games.png');
+  background-size: 100px;
+}
+
+.content {
+  width: 750px;
+  margin: auto;
+}
+
+/* aviso */
+.warning {
+  display: block;
+  background-color: lightgoldenrodyellow;
+  border: 3px solid gold;
+  border-radius: 7px;
+  padding: 16px 5px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 17px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+canvas {
+  border: 5px solid #555;
+}
+
+/* Console */
+.console {
+  background-color: rgb(32, 29, 29);
+  border: 5px solid #777;
+  width: 100%;
+  border-radius: 4rem;
+  margin: 100px 0;
+  padding: 50px 115px;
+  box-shadow: 0 0 1rem .375rem rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Analogico esquerdo */
+.console::after {
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  border: 7px solid wheat;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 25px;
+}
+
+/* Analogico direito */
+.console::before {
+  content: "";
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  border: 7px solid wheat;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  right: 25px;
+}
+
+.dpad {
+  background-color: white;
+  width: 60px;
+  height: 18px;
+  position: absolute;
+  top: 171px;
+  left: 20px;
+}
+
+.dpad.rotate {
+  transform: rotate(90deg);
+}
+
+/* Botões */
+.bto {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 26px;
+  position: absolute;
+}
+
+.bto-top {
+  top: 150px;
+  right: 44.5px;
+}
+
+.bto-bottom {
+  top: 196px;
+  right: 44.5px;
+}
+
+.bto-right {
+  top: 173px;
+  right: 18.5px;
+}
+
+.bto-left {
+  top: 173px;
+  right: 70.5px;
+}
